@@ -4,7 +4,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -92,7 +91,7 @@ In the project directory, you can run:
 
 ## Future Feature
 
-- **_Coming soon!_**
+- Implement user engagement features (likes, comments and ratings)
 
 ## Contributing 
 
