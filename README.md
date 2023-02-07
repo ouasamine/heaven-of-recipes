@@ -8,7 +8,7 @@
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Available Scripts](#available-scripts)
-- [👥 Authors](#author)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
