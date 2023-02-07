@@ -81,7 +81,7 @@ In the project directory, you can run:
   ```
   Launches the test runner.
 
-## Author
+## Authors
 
 👤 **Amine**
 
