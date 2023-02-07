@@ -1,5 +1,8 @@
 # PostgreSQL. Versions 9.3 and up are supported.
 #
+#rake db:setup
+#rake db:migrate
+#bundle install
 # Install the pg driver:
 #   gem install pg
 # On macOS with Homebrew:
@@ -16,20 +19,26 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
-  database: heaven_of_recipes_development
+  adapter: postgresql
+  encoding: unicode
+  database: recipe-app_db
+  username: postgres
+  password: olamilekan
+  pool: 5
+  timeout: 5000
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: heaven_of_recipes
+  #username: hellorails
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +66,13 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: heaven_of_recipes_test
+  adapter: postgresql
+  encoding: unicode
+  database: recipe-app_test
+  username: postgres
+  password: olamilekan
+  pool: 5
+  timeout: 5000
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +96,11 @@ test:
 #
 production:
   <<: *default
-  database: heaven_of_recipes_production
-  username: heaven_of_recipes
-  password: <%= ENV["HEAVEN_OF_RECIPES_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  encoding: unicode
+  database: recipe-app_db
+  username: postgres
+  password: olamilekan
+  pool: 5
+  timeout: 5000
+
