@@ -1,5 +1,17 @@
 <h1>INDEX</h1>
 
+<table class="table-list">
+<tr>
+  <th>Food</th>
+  <th>Measurement Unit</th>
+  <th>Unit Price</th>
+  <th>Actions</th>
+</tr>
 <% @food.each do |food| %>
-<%= food.name %>
+  <tr>
+    <td><%= food.name %></td>
+    <td><%= food.measurement_unit %></td>
+    <td><%= food.price %></td>
+  <tr>
 <% end %>
+</table>
