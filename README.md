@@ -89,6 +89,12 @@ In the project directory, you can run:
 - Twitter: [@ouass_amine](https://twitter.com/ouass_amine)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/amine-ouassef)
 
+👤 **Is-haq, Adnan Olamilekan**
+
+- GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
+- Twitter: [@AdnanIshaqOla](https://twitter.com/AdnanIshaqOla)
+- LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
+
 ## Future Feature
 
 - Implement user engagement features (likes, comments and ratings)
