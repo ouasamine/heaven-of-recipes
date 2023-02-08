@@ -12,7 +12,8 @@
     <td><%= food.measurement_unit %></td>
     <td><%= food.price %></td>
     <td><%= food.quantity %></td>
-    <td></td>
+    <td><%= button_to "Delete", food_path(food.id), method: :delete %></td>
   </tr>
 <% end %>
 </table>
+<span class="msg success"><%= flash[:success] %></span>
