@@ -5,6 +5,7 @@
   <th>Food</th>
   <th>Measurement Unit</th>
   <th>Unit Price</th>
+  <th>Quantity</th>
   <th>Actions</th>
 </tr>
 <% @food.each do |food| %>
@@ -12,6 +13,7 @@
     <td><%= food.name %></td>
     <td><%= food.measurement_unit %></td>
     <td><%= food.price %></td>
+    <td><%= food.quantity %></td>
   <tr>
 <% end %>
 </table>
