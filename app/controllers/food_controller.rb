@@ -10,21 +10,21 @@ class FoodController < ApplicationController
   def create
     @new_food = Food.new(food_params)
 
-    if @new_food.save
-      redirect_to food_index_path
-    end
+    return unless @new_food.save
+
+    redirect_to food_index_path
   end
 
   def destroy
     @target_food = Food.find(params[:id])
 
-    if @target_food.destroy
-      flash[:success] = "The food has been deleted successfully"
-      redirect_to food_index_path
-    end
+    return unless @target_food.destroy
+
+    flash[:success] = 'The food has been deleted successfully'
+    redirect_to food_index_path
   end
 
-  private 
+  private
 
   def food_params
     params.require(:food).permit(:name, :measurement_unit, :price, :quantity, :user_id)
