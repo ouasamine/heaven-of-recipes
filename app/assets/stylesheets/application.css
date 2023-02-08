@@ -34,9 +34,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
- }
+}
 
- .buttn {
+.buttn {
   width: fit-content;
   display: block;
   padding: 10px 25px;
@@ -45,23 +45,23 @@ body {
   background-color: #e5e5e5;
   color: var(--main-text-color);
   cursor: pointer;
- }
+}
 
- .buttn:hover {
+.buttn:hover {
   background-color: #efefef;
- }
+}
 
- form.button_to {
+form.button_to {
   display: inline-block;
- }
+}
 
- form.button_to button {
+form.button_to button {
   border: none;
   background: none;
   text-decoration: underline;
   cursor: pointer;
   color: var(--link-color);
- }
+}
 
 #user-nav {
   width: 100%;

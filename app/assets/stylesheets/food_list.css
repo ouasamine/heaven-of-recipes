@@ -7,7 +7,9 @@
   border-collapse: collapse;
 }
 
-.table-list, th, td {
+.table-list,
+th,
+td {
   padding: 25px;
   border: 1px solid #f0f0f0;
 }
