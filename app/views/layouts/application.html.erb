@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HeavenOfRecipes</title>
+    <title>Heaven Of Recipes</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,10 +11,12 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      Welcome <b> <%= current_user.name %></b>! 
-      <%= button_to "Logout", destroy_user_session_path, method: :delete %>
-    <% end %>
+    <nav id="user-nav">
+      <% if user_signed_in? %>
+        <div class="greet">Welcome <b> <%= current_user.name %>!</div>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+      <% end %>
+    </nav>
     <%= yield %>
   </body>
 </html>

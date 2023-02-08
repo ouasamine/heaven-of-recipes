@@ -1,8 +1,21 @@
 .table-list {
+  margin-top: 45px;
   border-collapse: collapse;
 }
 
 .table-list, th, td {
-  padding: 10px;
-  border: 1px solid #000;
+  padding: 25px;
+  border: 1px solid #f0f0f0;
+}
+
+.table-list tr:nth-child(odd) {
+  background-color: var(--table-odd-bg);
+}
+
+.table-list tr:nth-child(even) {
+  background-color: var(--table-even-bg);
+}
+
+.table-list tr:nth-child(1) {
+  background-color: #a5a5a5;
 }
