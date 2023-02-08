@@ -1,5 +1,5 @@
-<h1>New Food</h1>
-<%= form_with model: @new_food , url: food_index_path do |f| %>
+<%= form_with model: @new_food , url: food_index_path, class: "new-food" do |f| %>
+  <h1>Add a New Food</h1>
   <div class="field">
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -18,6 +18,6 @@
   </div>
   <%= f.hidden_field :user_id, value: current_user.id %>
   <div class="field">
-    <%= f.submit 'Add Food' %>
+    <%= f.submit 'Add Food', class: "buttn" %>
   </div>
 <% end %>
