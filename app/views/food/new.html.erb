@@ -1,0 +1,23 @@
+<h1>New Food</h1>
+<%= form_with model: @new_food , url: food_index_path do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :measurement_unit %>
+    <%= f.text_field :measurement_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </div>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <div class="field">
+    <%= f.submit 'Add Food' %>
+  </div>
+<% end %>
