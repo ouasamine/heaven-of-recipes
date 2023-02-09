@@ -71,3 +71,28 @@ form.button_to button {
   box-shadow: 0 0 15px var(--main-color);
   background-color: var(--main-color);
 }
+
+.table-list {
+  margin: 45px 0;
+  border-collapse: collapse;
+}
+
+.table-list,
+th,
+td {
+  padding: 25px;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.table-list tr:nth-child(odd) {
+  background-color: var(--table-odd-bg);
+}
+
+.table-list tr:nth-child(even) {
+  background-color: var(--table-even-bg);
+}
+
+.table-list tr:nth-child(1) {
+  background-color: #a5a5a5;
+}
