@@ -1,1 +1,18 @@
-<h1>bsds</h1>
+<h1>Shopping List</h1>
+
+Total Price: <%= @missing_foods_total_price %>
+Count: <%= @missing_foods_count %>
+<table class="table-list">
+<tr>
+  <th>Food</th>
+  <th>Quantity</th>
+  <th>Price</th>
+</tr>
+<% @recipes_missing_foods.each do |food| %>
+  <tr>
+    <td><%= food.name %></td>
+    <td><%= "#{food.quantity}#{food.measurement_unit}" %></td>
+    <td><%= food.price %></td>
+  </tr>
+<% end %>
+</table>
