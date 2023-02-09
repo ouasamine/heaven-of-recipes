@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :recipes
 
-  def user_recipes
+  def recipes
     Recipe.where(user: self)
   end
 end
