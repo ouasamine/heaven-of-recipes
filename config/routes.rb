@@ -11,6 +11,4 @@ Rails.application.routes.draw do
   resources :general_shopping_list, only: [:index]
   resources :recipes, only: [:index, :show, :new, :create, :destroy]
 
-  resources :recipe_foods, only: [:index, :show, :new, :create, :destroy]
-
 end
