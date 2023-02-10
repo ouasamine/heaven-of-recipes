@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-    before_action :authenticate_user!, only: [:new, :create, :index]
+  before_action :authenticate_user!, only: %i[new create index]
   def index
     @recipes = Recipe.where(user: current_user)
   end

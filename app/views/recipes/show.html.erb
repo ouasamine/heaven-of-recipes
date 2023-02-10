@@ -7,9 +7,10 @@
 
 
 
-<%= link_to "Add Ingredients", recipe_foods_path(@recipe.id), class: "buttn add-recipe-butt" %>
-
-<% @recipe.foods.each do |food| %>
-    <%= link_to "Delete", recipe_food_path(@recipe, food), method: :delete %>
+<%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe), class: "buttn add-recipe-butt" %>
+<% @recipe.recipe_foods.includes(:food).each do |recipe_food| %>
+    <p><%= recipe_food.food.name %> 
+    <%= button_to "Delete", recipe_food_path(recipe_food), method: :delete %>
+    </p>
 <% end %>
 

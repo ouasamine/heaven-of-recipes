@@ -1,0 +1,19 @@
+<%= form_with model: @new_recipe_food, url: recipe_recipe_food_index_path, class: "new-recipe" do |f| %>
+    
+    <div class="field">
+        <%= f.label :food_id %>
+        <%= f.collection_select :food_id, Food.all, :id, :name %>
+    </div>
+    <div class="field">
+        <%= f.label :quantity %>
+        <%= f.number_field :quantity %>
+    </div>
+    <div class="field">
+        <%= f.label :unit %>
+        <%= f.text_field :unit %>
+    </div>
+    <div class="field">
+        <%= f.submit 'Add Food', class: "buttn" %>
+    </div>
+    <% end %>
+    <span class="msg error"><%= flash[:error] %></span>
