@@ -15,6 +15,9 @@
     <nav id="user-nav">
       <% if user_signed_in? %>
         <div class="greet">Welcome <b> <%= current_user.name %>!</div>
+        <%= link_to "Food List", url: food_index_path %>
+        <%= link_to "Recipes", url: recipes_path %>
+        <%= link_to "Shopping List", url: general_shopping_list_index_path %>
         <%= button_to "Logout", destroy_user_session_path, method: :delete %>
       <% end %>
     </nav>
