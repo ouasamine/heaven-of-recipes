@@ -1,0 +1,16 @@
+<h3>
+<%= @recipe.name %>
+</h3>
+<p>Preparation time: <%= @recipe.preparation_time %></p>
+<p>Cooking time: <%= @recipe.cooking_time %></p>
+<p>Steps to go here: <%= @recipe.description %></p>
+
+
+
+<%= link_to "Add Ingredient", new_recipe_recipe_food_path(@recipe), class: "buttn add-recipe-butt" %>
+<% @recipe.recipe_foods.includes(:food).each do |recipe_food| %>
+    <p><%= recipe_food.food.name %> 
+    <%= button_to "Delete", recipe_food_path(recipe_food), method: :delete %>
+    </p>
+<% end %>
+

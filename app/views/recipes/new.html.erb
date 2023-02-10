@@ -1,0 +1,30 @@
+<%= form_with model: @new_recipe, url: recipes_path, class: "new-recipe" do |f| %>
+    <h1>Add a New Recipe</h1>
+
+    <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+    <div class="field">
+        <%= f.label :preparation_time %>
+        <%= f.number_field :preparation_time %>
+    </div>
+    <div class="field">
+        <%= f.label :cooking_time %>
+        <%= f.number_field :cooking_time %>
+    </div>
+    <div class="field">
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+    </div>
+    <div class="field">
+        <%= f.label :public %>
+        <%= f.check_box :public %>
+    </div>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <div class="field">
+        <%= f.submit 'Add Recipe', class: "buttn" %>
+    </div>
+    <% end %>
+    
+    <span class="msg error"><%= flash[:error] %></span>

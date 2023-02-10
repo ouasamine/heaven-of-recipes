@@ -8,7 +8,7 @@
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Available Scripts](#available-scripts)
-- [👥 Authors](#author)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -81,13 +81,19 @@ In the project directory, you can run:
   ```
   Launches the test runner.
 
-## Author
+## Authors
 
 👤 **Amine**
 
 - GitHub: [@ouasamine](https://github.com/ouasamine)
 - Twitter: [@ouass_amine](https://twitter.com/ouass_amine)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/amine-ouassef)
+
+👤 **Is-haq, Adnan Olamilekan**
+
+- GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
+- Twitter: [@AdnanIshaqOla](https://twitter.com/AdnanIshaqOla)
+- LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
 ## Future Feature
 

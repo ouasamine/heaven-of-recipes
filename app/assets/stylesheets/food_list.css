@@ -1,0 +1,27 @@
+.add-food-butt {
+  margin: 20px 0;
+}
+
+form.new-food {
+  margin: 50px 0;
+  padding: 25px;
+  background-color: var(--main-color);
+}
+
+form.new-food h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+form.new-food .field {
+  width: 500px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form.new-food input[type=text],
+form.new-food input[type=number] {
+  padding: 4px;
+}

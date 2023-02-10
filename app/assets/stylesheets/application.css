@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+:root {
+  --main-color: #c0c0c0;
+  --sec-color: #fff;
+  --link-color: #00f;
+  --table-odd-bg: #d0d0d0;
+  --table-even-bg: #e9e9e9;
+  --main-text-color: #5a5a5a;
+  --sec-text-color: #c0c0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttn {
+  width: fit-content;
+  display: block;
+  padding: 10px 25px;
+  border: none;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.buttn:hover {
+  background-color: #efefef;
+}
+
+form.button_to {
+  display: inline-block;
+}
+
+form.button_to button {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+#user-nav a {
+  display: flex;
+}
+
+#user-nav {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 15px var(--main-color);
+  background-color: var(--main-color);
+}
+
+#user-nav b {
+  display: flex;
+  gap: 15px;
+}
+
+.table-list {
+  margin: 45px 0;
+  border-collapse: collapse;
+}
+
+.table-list,
+th,
+td {
+  padding: 25px;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.table-list tr:nth-child(odd) {
+  background-color: var(--table-odd-bg);
+}
+
+.table-list tr:nth-child(even) {
+  background-color: var(--table-even-bg);
+}
+
+.table-list tr:nth-child(1) {
+  background-color: #a5a5a5;
+}
+
+.card {
+  margin: 45px 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border: 1px solid #c0c0c0;
+}

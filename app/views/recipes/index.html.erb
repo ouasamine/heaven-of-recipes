@@ -1,0 +1,19 @@
+<%= link_to "Add a new recipe", new_recipe_path, class: "buttn add-recipe-butt" %>
+<table class="table-list">
+  <tr>
+    <th>Recipe</th>
+    <th>Actions</th>
+  </tr>
+  <% @recipes.each do |recipe| %>
+    
+    <tr>
+    <td><%= link_to recipe.name, recipe_path(recipe.id) %></td>
+      <td><%= recipe.description %></td>
+      
+      
+      <td><%= button_to "Delete", recipe_path(recipe.id), method: :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<span class="msg success"><%= flash[:success] %></span>
+
