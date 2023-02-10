@@ -63,6 +63,10 @@ form.button_to button {
   color: var(--link-color);
 }
 
+#user-nav a {
+  display: flex;
+}
+
 #user-nav {
   width: 100%;
   padding: 20px 40px;
@@ -70,6 +74,11 @@ form.button_to button {
   justify-content: space-between;
   box-shadow: 0 0 15px var(--main-color);
   background-color: var(--main-color);
+}
+
+#user-nav b {
+  display: flex;
+  gap: 15px;
 }
 
 .table-list {
