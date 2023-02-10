@@ -1,4 +1,4 @@
-<%= form_with model: @new_recipe_food, class: "new-recipe" do |f| %>
+<%= form_with model: @new_recipe_food, url: recipe_recipe_food_index_path, class: "new-recipe" do |f| %>
     
     <div class="field">
         <%= f.label :food_id %>
@@ -12,7 +12,6 @@
         <%= f.label :unit %>
         <%= f.text_field :unit %>
     </div>
-    <%= f.hidden_field :recipe_id, value: @recipe.id %>
     <div class="field">
         <%= f.submit 'Add Food', class: "buttn" %>
     </div>

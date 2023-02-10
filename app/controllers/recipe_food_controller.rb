@@ -5,12 +5,16 @@ class RecipeFoodController < ApplicationController
     end
     
     def create
-        @new_recipe_food = RecipeFood.new(recipe_food_params)
+        @new_recipe_food = RecipeFood.new(
+            food_id: params[:recipe_food][:food_id],
+            recipe_id: params[:recipe_food][:recipe_id],
+            quantity: params[:recipe_food][:quantity]
+        )
     
         return unless @new_recipe_food.save
     
         flash[:success] = 'Food added to recipe successfully'
-        redirect_to recipe_path(@new_recipe_food.recipe_id)
+        redirect_to recipes_path
     end
     
     def destroy
