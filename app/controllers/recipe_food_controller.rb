@@ -7,7 +7,7 @@ class RecipeFoodController < ApplicationController
     def create
         @new_recipe_food = RecipeFood.new(
             food_id: params[:recipe_food][:food_id],
-            recipe_id: params[:recipe_food][:recipe_id],
+            recipe_id: params[:recipe_id],
             quantity: params[:recipe_food][:quantity]
         )
     
