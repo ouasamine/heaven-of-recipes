@@ -105,3 +105,12 @@ td {
 .table-list tr:nth-child(1) {
   background-color: #a5a5a5;
 }
+
+.card {
+  margin: 45px 0;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  border: 1px solid #c0c0c0;
+}

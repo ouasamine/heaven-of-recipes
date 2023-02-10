@@ -1,0 +1,15 @@
+
+
+  <% @recipes.includes(:foods, :user).each do |recipe| %>
+    <div class="card">
+      <div class="name">
+        <div><%= link_to recipe.name, recipe_path(recipe.id) %> </div>
+        <div>By <%= recipe.user.name %></div>
+      </div>
+      <div class="detls"> 
+        <div>Total food items: <%= recipe.foods.count %></div>
+        <div>Total Price: <%= recipe.total_price %></div>
+      </div>
+    </div>
+  <% end %>
+

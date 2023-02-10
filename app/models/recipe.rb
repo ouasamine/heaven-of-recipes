@@ -3,6 +3,14 @@ class Recipe < ApplicationRecord
   has_many :recipe_foods
   has_many :foods, through: :recipe_foods
 
+  def total_price
+    total = 0
+    foods.each do |food|
+      total += food.price
+    end
+    total
+  end
+
   def missing_foods
     data = { list: [], count: 0, total_price: 0 }
     recipe_foods.includes(:food).each do |recipe_food|

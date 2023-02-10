@@ -17,6 +17,7 @@
         <div class="greet">Welcome <b> <%= current_user.name %>!</div>
         <%= link_to "Food List", food_index_path%>
         <%= link_to "Recipes", recipes_path %>
+        <%= link_to "Public Recipes", public_recipes_path %>
         <%= link_to "Shopping List", general_shopping_list_index_path %>
         <%= button_to "Logout", destroy_user_session_path, method: :delete %>
       <% end %>

@@ -13,4 +13,5 @@ Rails.application.routes.draw do
     resources :recipe_food, only: [:new, :create]
   end
   resources :recipe_food, only: [:destroy]
+  resources :public_recipes, only: [:index]
 end
