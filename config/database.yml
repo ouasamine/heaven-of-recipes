@@ -84,7 +84,7 @@ test:
 #
 production:
   <<: *default
-  database: recipe-app_db
+  database: recipe_app_db
   username: rails_blog
   password: <%= ENV["RAILS_BLOG_DATABASE_PASSWORD"] %>
   
